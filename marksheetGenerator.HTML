@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Generator Project</title>
+    <!--Styling-->
+    <link rel="stylesheet" href="marksheetGenerator.css">
+</head>
+<body>
+    <section class="all-container">
+        <section class="input">
+            <div class="input-container">
+                <div class="title">
+                    <h3> Marksheet Generator</h3>
+                    <h4>Marksheet generation is now an easy task!</h4>
+                </div>
+                <!--Input marks and details Container-->
+                <div class="input-form">
+                    <div class="input">
+                        <p>Student Name :</p>
+                        <input type="text"placeholder ="Enter your name" id="student-name-input" class="name-input" required>
+                    </div>
+                    <div class="input">
+                        <p>Class :</p>
+                        <input type="number" placeholder="Enter your class" id="class-input" class="class" required>
+                    </div>
+                    <div class="underline"></div>
+                    <div class="input">
+                        <p>English :</p>
+                        <input type="number" placeholder="Marks obtained in English" id="english-marks-input" class="marks-gained" min="0"max="100">
+                    </div>
+                    <div class="underline"></div>
+                    <div class="input">
+                        <p>Nepali :</p>
+                        <input type="number" placeholder="Marks obtained in Nepali" id="nepali-marks-input" class="marks-gained" min="0"max="100">
+                    </div>
+                    <div class="underline"></div>
+                    <div class="input">
+                        <p>Chemistry :</p>
+                        <input type="number" placeholder="Marks obtained in Chemistry" id="chemistry-marks-input" class="marks-gained" min="0"max="100">
+                    </div>
+                    <div class="underline"></div>
+                    <div class="input">
+                        <p> Maths :</p>
+                        <input type="number" placeholder="Marks obtained in  Maths" id="maths-marks-input" class="marks-gained" min="0"max="100">
+                    </div>
+                    <div class="underline"></div>
+                    <div class="input">
+                        <p>Physics :</p>
+                        <input type="number" placeholder="Marks obtained in Physics" id="physics-marks-input" class="marks-gained" min="0"max="100">
+                  </div>
+            </div>
+            <button type="button" class="generate-btn">Generate</button>
+                    <div class="underline"></div>
+        </section>
+        <!--Section to show results-->
+
+        <section class="result">
+            <div class="result-title">
+                <h3>Student Mark Sheet</h3>
+            </div>
+            <div class="name-class">
+                <div class="name">
+                    <p>Student Name :<span id="student-name-display"></span></p>
+                    
+                </div>
+                <div class="class">
+                    <p>Class :<span id="class-display"></span></p>
+                    
+                </div>
+            </div>
+            <div class="result-underline"></div>
+            <div class="headers">
+                <p>S.N</p>
+                <p>Subjects</p>
+                <p>Marks Obtained</p>
+                <p>Total Marks</p>
+                <p>Grade</p>
+            </div>
+            <div class="result-underline"></div>
+            <div class="subject">
+                <p>01</p>
+                <p  class="subjectt">English</p>
+                <p id="english-result-display"></p>
+                <p>100</p>
+               
+            </div>
+            <div class="subject">
+                <p>02</p>
+                <p  class="subjectt">Nepali</p>
+                <p id="nepali-result-display"></p>
+                <p>100</p>
+               
+            </div>
+            <div class="subject">
+                <p>03</p>
+                <p  class="subjectt">Chemistry</p>
+                <p id="chemistry-result-display"></p>
+                <p>100</p>
+               
+            </div>
+            <div class="subject">
+                <p>04</p>
+                <p class="subjectt">Maths</p>
+                <p id="maths-result-display"></p>
+                <p>100</p>
+                
+            </div>
+            <div class="subject">
+                <p>05</p>
+                <p class="subjectt">Physics</p>
+                <p id="physics-result-display"></p>
+                <p>100</p>
+                
+            </div>
+            <div class="result-underline"></div>
+            <div class="total">
+                <p>Total Marks obtained :<span id="total-marks"></span></p>
+                <p>Percentage :<span id="percentage"></span></p>
+                <p>Highest Marks:<span id="highest"></span></p>
+                <p class="grade">Grade:<span id="Grade"></span></p>
+            </div>
+            <div class="result-underline"></div>
+            <div class="desc"><p><span id="remarks"></span></p></div>
+            <div class="result-underline"></div>
+        </section>
+    </section>
+    <!--JavaScript-->
+  <script src="marksheetGenerator.JS"></script>  
+</body>
+</html>
